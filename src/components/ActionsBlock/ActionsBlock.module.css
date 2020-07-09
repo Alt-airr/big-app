@@ -1,0 +1,9 @@
+
+.actionBlock {
+    display: flex;
+    align-content: space-between;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px 10px 15px;
+}

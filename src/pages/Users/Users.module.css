@@ -1,0 +1,17 @@
+.usersList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.profileCard:hover .usersList {
+    background-color: white;
+}
+
+@media all and (max-width: 480px) {
+  .usersList {
+      justify-content: space-around;
+  }
+}

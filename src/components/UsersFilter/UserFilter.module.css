@@ -1,0 +1,11 @@
+.filterBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transition: 0.5s all;
+}
+
+.filterBlock .textInput {
+    width: 90%;
+}

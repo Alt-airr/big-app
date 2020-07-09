@@ -1,0 +1,1 @@
+export const GET_USERS_API = "https://randomuser.me/api/?results=60&nat=us";

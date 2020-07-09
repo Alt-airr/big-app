@@ -1,0 +1,15 @@
+.about-page {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.about-page span {
+    float: right;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.about-page p {
+    float: right;
+    font-size: 20px;
+}

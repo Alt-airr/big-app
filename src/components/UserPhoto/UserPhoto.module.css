@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.profileCard {
+    margin: 20px 10px;
+}
+.cardHeader img {
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    transition: 0.2s;
+    width: 111px;
+}
+
+.profileCard .actionBlock {
+    display: none;
+}
+
+aside {
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+    background: 0;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+
+aside:hover {
+    border-top: 4px solid steelblue;
+    border-bottom: 4px solid steelblue;
+    border-radius: 5px;
+    width: 180px;
+    box-shadow: 0 0 2px 1px #fff;
+    background-color: black;
+    background-size: cover;
+}
+
+.actionBlock{
+    display: none;
+}
+
+aside:hover .actionBlock{
+    display: flex;
+}
+
+aside:hover .cardHeader img {
+    animation: profile_image 200ms linear both;
+    border-radius: 0;
+    border: 0;
+    width: 100%;
+}
+
+.cardHeader {
+    text-align: center;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.cardHeader h1 {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    transition: all ease 0.3s;
+}
+
+.cardHeader h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 0px;
+    margin: 0;
+}
+
+.profileBio {
+    margin-top: 10px;
+    padding: 5px;
+    transition: all linear 0.2s;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
+}
+.profileBio h2 {
+    text-overflow: ellipsis;
+}
+
+aside:hover .profileBio {
+    display: flex;
+}
+
+.profileBio p:first-child {
+    text-align: center;
+    font-size: 16px;
+}
+
+.profileSocialLinks {
+    position: relative;
+    margin-top: -440px;
+    margin-left: -100px;
+    list-style-type: none;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+aside:hover .profileSocialLinks {
+    margin-left: -30px;
+    opacity: 1;
+}
+
+aside:hover .actionBlock {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px 10px 15px;
+}
+
+.profileSocialLinks li img {
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+aside:hover ul li:first-child {
+    animation: social_animation 2000ms ease-in-out both;
+    animation-delay: 0.75s;
+}
+
+aside:hover ul li:nth-child(2) {
+    animation: social_animation 2000ms ease-in-out both;
+    animation-delay: 1s;
+}
+
+aside:hover ul li:nth-child(3) {
+    animation: social_animation 2000ms ease-in-out both;
+    animation-delay: 1.25s;
+}
+

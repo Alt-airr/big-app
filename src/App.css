@@ -1,0 +1,29 @@
+.App {
+    background: radial-gradient(#387989, black) no-repeat;
+}
+
+.app-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: -2px 0 15px rgba(0, 0, 0, .8);
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+}
+
+.app-wrapper main {
+    display: flex;
+    justify-content: space-around;
+    min-height: 80vh;
+    padding: 16px;
+}
+
+.page-content {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #1b2845;
+    border-right: 1px solid #1b2845;
+}

@@ -1,0 +1,87 @@
+.navBar {
+    width: 100%;
+    background: none;
+}
+
+.navBar a {
+    position: relative;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: none;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.navBar li {
+    background: none;
+}
+
+.navBar li:hover {
+    background-size: 100% 5px, auto;
+}
+
+
+
+.navBar ul {
+    display: flex;
+}
+
+.navBar li {
+    flex: 3;
+}
+
+
+
+@media all and (max-width: 1000px) {
+    .navBar ul {
+        flex-wrap: wrap;
+    }
+
+    .navBar li {
+        flex: 1 1 50%;
+    }
+
+    .navBar .user {
+        flex: 1 1 33.33%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .navBar li {
+        flex-basis: 100%;
+    }
+
+    .navBar .user {
+        flex-basis: 50%;
+    }
+}
+.navBar a:hover, a:focus {
+    color: #999;
+    text-decoration: none;
+}
+
+
+.navBar a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+.navBar a:active::before {
+    background-color: #000;
+}
+.navBar a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}

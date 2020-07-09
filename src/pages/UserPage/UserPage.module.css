@@ -1,0 +1,46 @@
+.profilePage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.pageHeader {
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.avatarBlock {
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.userPhoto {
+    display: flex;
+    justify-content: center;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.userInfo tr {
+    line-height: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px solid #1b2845;
+}
+
+
+.userName {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
